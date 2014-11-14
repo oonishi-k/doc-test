@@ -10,12 +10,11 @@
 
 * Python3.4以降
 * Windows 7 64bit
-  (※VisualStudioがインストールされていること)
+* msvcrt.dll (パスの通ったフォルダにあること)
 
   | Pythonは3.4以降が必須(3.3以前だと動かない)
-  | VisualStudioは、パスの通ったフォルダに
-  | C言語の標準ライブラリ(msvcrt.dll)があれば多分無くてもいい。
-
+  | msvcrt.dllのバージョンは多分何でもいい
+  | (確認済みは、VisualStudio 2014Expressのみ。)
 
 
 インストール
