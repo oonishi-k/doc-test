@@ -9,15 +9,15 @@
 
 
 * Python3.4以降
-* Windows 7 64bit (VisualStudioがインストールされていること)
+* Windows 7 64bit
+  (※VisualStudioがインストールされていること)
 
-.. note:: This is a note admonition.
 
-   となります。
-   VisualStudioのバージョンについては、
-   System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
-   あればいいので、多分なんでもいいと思います。
-   (確認済みは、2014Expressのみです。)
+  | となります。
+  | VisualStudioのバージョンについては、
+  | System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
+  | あればいいので、多分なんでもいい。
+  | (確認済みは、2014Expressのみです。)
 
 
 インストール
