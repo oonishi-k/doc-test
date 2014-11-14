@@ -17,7 +17,7 @@ Introduction
 
 
 
-.. code:: c: test.c:
+.. code:: c
     #include<stdio.h>
     
     void hello()
