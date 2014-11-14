@@ -19,13 +19,15 @@
 | (確認済みは、2014Expressのみです。)
 
 
-| zipをダウンロード、解凍後、noueフォルダにて
+
+zipをダウンロード、解凍後、noueフォルダにて
 
 .. code:: output
 
   >python ./setup.py install
 
 | を実行してください
+
 
 
 
