@@ -17,7 +17,7 @@ Introduction
 
 test.c
 
-.. code:: c
+.. code:: c : aaa
 
     #include<stdio.h>
     
