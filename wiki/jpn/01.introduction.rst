@@ -15,16 +15,16 @@ Introduction
 
 
 
-test.c::
+test.c:
 
-.. code:: c
-    #include<stdio.h>
-    
-    void hello()
-    {
-        printf("HelloWorld\n");
-    }
-
+	.. code:: c
+	    #include<stdio.h>
+	    
+	    void hello()
+	    {
+	        printf("HelloWorld\n");
+	    }
+	
 
 | test.py:
 .. code:: python
