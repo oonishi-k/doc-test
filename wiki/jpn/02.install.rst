@@ -4,12 +4,11 @@
 [`English <../eng/02.install.rst>`_]
 
 
-動作環境
-======
+*動作環境*
 
-| 動作環境
-.Python3.4以降
-.Windows 7 64bit
+
+* Python3.4以降
+* Windows 7 64bit
  （VisualStudioがインストールされていること)
 
 
