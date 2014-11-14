@@ -10,14 +10,14 @@
 
 * Python3.4以降
 * Windows 7 64bit
-  (※VisualStudioがインストールされていること)
+   (※VisualStudioがインストールされていること)
 
 
   | となります。
   | VisualStudioのバージョンについては、
   | System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
   | あればいいので、多分なんでもいいと思います。
-  13.7130455806(確認済みは、2014Expressのみです。)
+  | (確認済みは、2014Expressのみです。)
 
 
 インストール
