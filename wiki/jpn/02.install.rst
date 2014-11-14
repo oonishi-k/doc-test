@@ -27,14 +27,11 @@
 | zipをダウンロード、解凍後、noueフォルダにて
 |
 
-
 .. code:: output
 
   >python ./setup.py install
   
-
-
-  | を実行してください
+| を実行してください
 
 
 
