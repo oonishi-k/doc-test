@@ -23,15 +23,17 @@
 インストール
 -----------
 
-あいうえお
 
   | zipをダウンロード、解凍後、noueフォルダにて
+  |
 
-  .. code:: output
- 
-    >python ./setup.py install
+.. code:: output
 
-  を実行してください
+  >python ./setup.py install
+  
+
+
+  | を実行してください
 
 
 
