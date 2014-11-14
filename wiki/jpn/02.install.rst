@@ -10,7 +10,7 @@
 
 * Python3.4以降
 * Windows 7 64bit
-  ※VisualStudioがインストールされていること)
+  (※VisualStudioがインストールされていること)
 
 
   | となります。
