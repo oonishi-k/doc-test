@@ -15,7 +15,8 @@ Introduction
 
 
 
-| test.c
+test.c
+
 .. code:: c
 
     #include<stdio.h>
