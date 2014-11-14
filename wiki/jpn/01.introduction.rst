@@ -14,10 +14,8 @@ Introduction
 
 
 
-
-
-
-.. code :: c : test.c:
+| test.c:
+.. code:: c
 
     #include<stdio.h>
     
@@ -25,7 +23,7 @@ Introduction
     {
         printf("HelloWorld\n");
     }
-	
+
 
 | test.py:
 .. code:: python
