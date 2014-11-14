@@ -7,20 +7,19 @@
 *動作環境*
 
 
-* Python3.4以降
-* Windows 7 64bit ※VisualStudioがインストールされていること
+ * Python3.4以降
+ * Windows 7 64bit(※VisualStudioがインストールされていること)
 
 
-| となります。
-| VisualStudioのバージョンについては、
-| System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
-| あればいいので、多分なんでもいいと思います。
-| (確認済みは、2014Expressのみです。)
+ | となります。
+ | VisualStudioのバージョンについては、
+ | System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
+ | あればいいので、多分なんでもいいと思います。
+ | (確認済みは、2014Expressのみです。)
 
---
 
-zipをダウンロード、解凍後、noueフォルダにて
 
+ |zipをダウンロード、解凍後、noueフォルダにて
 .. code:: output
 
   >python ./setup.py install
