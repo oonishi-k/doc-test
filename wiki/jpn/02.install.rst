@@ -13,7 +13,6 @@
   (※VisualStudioがインストールされていること)
 
 
-  | となります。
   | VisualStudioのバージョンについては、
   | System32フォルダにC言語の標準ライブラリ(msvcrt.dll)が
   | あればいいので、多分なんでもいい。
