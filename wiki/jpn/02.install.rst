@@ -6,9 +6,10 @@
 
 動作環境
 ======
-動作環境
-・Python3.4以降
-・Windows 7 64bit
+
+| 動作環境
+.Python3.4以降
+.Windows 7 64bit
  （VisualStudioがインストールされていること)
 
 
