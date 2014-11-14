@@ -18,11 +18,14 @@
  | (確認済みは、2014Expressのみです。)
 
 
+*インストール*
+
 
  | zipをダウンロード、解凍後、noueフォルダにて
-.. code:: output
 
-  >python ./setup.py install
+ .. code:: output
+
+   >python ./setup.py install
 
  | を実行してください
 
