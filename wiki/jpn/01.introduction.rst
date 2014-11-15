@@ -8,7 +8,7 @@ Introduction
 
 | 「Noue」はPython用のC言語エミュレーターです。
 | C言語ソースコードをPythonコードに変換して実行します。
-| C言語での開発において、ユニットテストをPython上で行うためのツールとして
+| C言語ソースのユニットテストを、Python上で行うためのツールとして
 | 開発しています。
 | 
 
@@ -29,9 +29,12 @@ Introduction
 .. code:: python
 
     from noue.compiler import CCompiler
-    from ctypes import*
     
     test = CCompiler().compile('test.c')
+    
+    import ctypes
+    test.printf = ctypes.cdll.msvcrt.printf
+    
     test.times()
 	
 	
@@ -41,7 +44,7 @@ Introduction
     >HelloWorld
 
 
-| C言語ソースをPure Pythonコードに変換して実行するので
+| C言語ソースをピュアPythonコードに変換して実行するので
 | Pythonの標準ライブラリであるpdbが使用できます。
 | 
 
