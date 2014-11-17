@@ -60,6 +60,9 @@ test
  
   [link]: http://example.com/ "インデックス型のリンク"
   [image]: http://github.com/github.png "インデックス型の画像"
+
+[test](./ "title")  
+[test]: ?  
  
 ### 引用、ネストした引用
 > これは引用です。
