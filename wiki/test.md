@@ -17,10 +17,10 @@
                       もしくはタブを挿入します */
     }
     
-'''python
+```python
 import pdb
 pdb.set_stace(line=0)
-'''
+```
  
 パラメータの解説
 ----------------
