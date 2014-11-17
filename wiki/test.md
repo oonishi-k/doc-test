@@ -54,7 +54,7 @@ test
 --------
 ### リンク、ネストしたリスト
 1. [リンク1](http://example.com/ "リンクのタイトル")
-    * ![画像1](http://github.com/unicorn.png "画像のタイトル")
+    * ![画像1](https://avatars2.githubusercontent.com/u/9919?v=3 "画像のタイトル")
 2. [リンク2][link]
     - [![画像2][image]](https://github.com/)
  
