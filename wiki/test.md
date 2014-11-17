@@ -26,6 +26,11 @@ pdb.set_stace(line=0)
     test
     as.pic
     ???
+
+# test #
+    test
+    as.pic
+    ???
  
 パラメータの解説
 ----------------
