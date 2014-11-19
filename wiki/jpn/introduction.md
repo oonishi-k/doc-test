@@ -7,10 +7,9 @@ Introduction
 はじめに
 -------------
 
-「Noue」はPython用のC言語エミュレーターです。  
-C言語ソースコードをPythonコードに変換して実行します。  
-C言語ソースのユニットテストを、Python上で行うためのツールとして  
-開発しています。  
+「Noue」はPython用のC言語パーサ・エミュレーターです。  
+C言語ソースコードを解析し、関数、変数、型をPython上にエクスポートします。  
+C言語ソースのユニットテストを、Python上で行うためのツールとして  開発しています。  
 
 
 
@@ -31,12 +30,15 @@ test.py:
 
     from noue.compiler import CCompiler
     
+    # test.cをpythonコードに変換
     test = CCompiler().compile('test.c')
     
     import ctypes
+    
+    # 外部関数"printf"をリンク
     test.printf = ctypes.cdll.msvcrt.printf
     
-    test.times()
+    test.hello()
 ```
 	
 	
