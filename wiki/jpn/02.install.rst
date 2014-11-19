@@ -24,7 +24,7 @@
 | zipをダウンロード、解凍後、noueフォルダにて
 |
 
-.. code:: output
+.. code:: console
 
   >python ./setup.py install
   

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link rel='stylesheet' href='C:\Users\user01\AppData\Roaming\MarkDownSharpEditor\css\hibara.org.css' type='text/css' />
+<style type='text/css'>
+	 ._mk {background-color:#FFFFC8}
+</style>
+<title>introduction.md</title>
+</head>
+<body>
+<p>=================</p>
+<h1>Introduction</h1>
+<p><a href="../eng/01.introduction.rst">English</a></p>
+<h2>はじめに</h2>
+<p>「Noue」はPython用のC言語エミュレーターです。<br />
+C言語ソースコードをPythonコードに変換して実行します。<br />
+C言語ソースのユニットテストを、Python上で行うためのツールとして<br />
+開発しています。  
+</p>
+<p>test.c<br />
+```c</p>
+<pre><code>#include&lt;stdio.h&gt;
+
+void hello()
+{
+    printf(&quot;HelloWorld\n&quot;);
+}
+</code></pre>
+
+<p>```</p>
+<p>test.py:<br />
+```python</p>
+<pre><code>from noue.compiler import CCompiler
+
+test = CCompiler().compile('test.c')
+
+import ctypes
+test.printf = ctypes.cdll.msvcrt.printf
+
+test.times()
+</code></pre>
+
+<p>```</p>
+<p>出力:<br />
+<code>console
+    &gt;HelloWorld</code></p>
+<p>C言語ソースをピュアPythonコードに変換して実行するので<br />
+Pythonの標準ライブラリであるpdbが使用できます。  
+</p>
+</body>
+</html>
+��ブラリであるpdbが使用できます。
+| </p>
+</body>
+</html>
