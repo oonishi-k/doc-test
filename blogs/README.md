@@ -6,9 +6,9 @@ Noue: C Language Emulator for Python
 
 What is Noue?
 -------------
-  Noue is a C Language emulator library for Python.
-  Noue parses a C source, and exports functions, types, and global variables for python.
-  If you use Noue, you need to know about python standard library, "ctypes".
+  Noue is a C Language emulator library for Python.  
+  Noue parses a C source, and exports functions, types, and global variables for python.  
+  If you use Noue, you need to know about python standard library, "ctypes".  
 
 
 
