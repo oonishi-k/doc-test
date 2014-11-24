@@ -4,24 +4,24 @@ Noue: C Language Emulator for Python
 
 
 
-Noueとは
---------
-  Noueはpython用のC言語エミュレーターライブラリです。  
-  C言語ソースを解析し、そこにふくまれる関数、型、グローバル変数をPython上にエクスポートします。  
-  使用にはpythonの標準ライブラリ「ctypes」の知識が必要になります。
+What is Noue?
+-------------
+  Noue��python�p��C����G�~�����[�^�[���C�u�����ł��B  
+  C����\�[�X����͂��A�����ɂӂ��܂��֐��A�^�A�O���[�o���ϐ���Python��ɃG�N�X�|�[�g���܂��B  
+  �g�p�ɂ�python�̕W�����C�u�����uctypes�v�̒m�����K�v�ɂȂ�܂��B
 
 
 
-動作環境
---------
- * Python3.4以降  
+Requirements
+------------
+ * Python3.4 or later  
  * OS: Windows or Linux (64bit)  
 
 
 
-インストール
+Install
 ------------
-  ソース一式をダウンロード後、setup.pyを実行する  
+  �\�[�X�ꎮ���_�E�����[�h��Asetup.py�����s����  
 ```console
 >cd ./noue
 >python3 ./setup.py install
@@ -30,7 +30,7 @@ Noueとは
 
 
 
-サンプル
+Sample
 ---------
 
 test.c:  
@@ -82,21 +82,21 @@ void dump(const vector_t* v)
 ```python
 >>> from noue.compiler import CCompiler
 
->>> # cソースをpythonモジュールに変換
+>>> # converting c source to python module
 >>> test = CCompiler().compile('./test.c')
 
 
->>> # 構造体をctypes.Structureオブジェクトとしてエクスポート
+>>> # exporting c structure as ctypes.Structure object
 >>> v = test.vector_t()
 >>> print(v.x, v.y)
 0.0 0.0
 
->>> # グローバル変数をctypesオブジェクトとしてエクスポート
+>>> # exporting global variable as ctypes object
 >>> print(test.V0.x, test.V0.y)
 0.0 0.0
 
->>> # 関数をエクスポート
->>> # ※引数はctypesオブジェクトでなければならない
+>>> # exporting function
+>>> # (parameters must be ctypes objects)
 >>> from ctypes import *
 >>> v1 = test.vector_t(1,0)
 >>> v2 = test.vector_t(1,1)
@@ -104,8 +104,7 @@ void dump(const vector_t* v)
 >>> print(inner)
 1.0
 
->>> # externとして宣言された関数は
->>> # 別途リンクする必要がある
+>>> # Functions deculared as "extern" must be liked later.
 >>> v3 = test.vector_t(2.0, 3.0)
 >>> test.dump(pointer(v3))
 Traceback (most recent call last):
@@ -115,13 +114,13 @@ Traceback (most recent call last):
     printf("x=%lf y=%lf\n", v->x, v->y);
 AttributeError: 'module' object has no attribute 'printf'
 
->>> # ctypesを利用して、標準ライブラリからprintfをリンク
+>>> # "printf" is linked from standard Library using python ctypes library.
 >>> libc = CDLL('libc.so.6')
 >>> test.printf = libc.printf
 >>> test.dump(pointer(v3))
 x=0.000000 y=-1.000000
 
->>> #pythonの標準デバッガ"pdb"が利用可能
+>>> # Python standard debugger, "pdb" is available.
 >>> import pdb
 >>> pdb.runcall(test.sub, pointer(v1), pointer(v2))
 > ./test.c(14)sub()
@@ -140,7 +139,7 @@ x=0.000000 y=-1.000000
 (Pdb) c
 <test.typedefas(vector_t) object at 0x0000000003520748>
 
->>> # C言語ソースにpythonコードの埋め込みが可能
+>>> # C����\�[�X��python�R�[�h�̖��ߍ��݂��\
 >>> area = test.triangle_area(pointer(test.V0), pointer(v1), pointer(v2))
 result= c_double(0.5)
 >>> print(area)
