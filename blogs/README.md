@@ -1,14 +1,14 @@
 
 Noue: C Language Emulator for Python
-====================
+=====================================
 
 
 
 What is Noue?
 -------------
-  Noueはpython用のC言語エミュレーターライブラリです。  
-  C言語ソースを解析し、そこにふくまれる関数、型、グローバル変数をPython上にエクスポートします。  
-  使用にはpythonの標準ライブラリ「ctypes」の知識が必要になります。
+  Noue is a C Language emulator library for Python.
+  Noue parses a C source, and exports functions, types, and global variables for python.
+  If you use Noue, you need to know about python standard library, "ctypes".
 
 
 
@@ -20,8 +20,8 @@ Requirements
 
 
 Install
-------------
-  ソース一式をダウンロード後、setup.pyを実行する  
+-------
+  Download the zip, and run the supplied setup.py script.
 ```console
 >cd ./noue
 >python3 ./setup.py install
@@ -31,7 +31,7 @@ Install
 
 
 Sample
----------
+------
 
 test.c:  
 ```c
@@ -114,7 +114,7 @@ Traceback (most recent call last):
     printf("x=%lf y=%lf\n", v->x, v->y);
 AttributeError: 'module' object has no attribute 'printf'
 
->>> # "printf" is linked from standard Library using python ctypes library.
+>>> # "printf" is linked from C standard Library using python ctypes module.
 >>> libc = CDLL('libc.so.6')
 >>> test.printf = libc.printf
 >>> test.dump(pointer(v3))
@@ -139,7 +139,7 @@ x=0.000000 y=-1.000000
 (Pdb) c
 <test.typedefas(vector_t) object at 0x0000000003520748>
 
->>> # C言語ソースにpythonコードの埋め込みが可能
+>>> # You can embed python source in c language source.
 >>> area = test.triangle_area(pointer(test.V0), pointer(v1), pointer(v2))
 result= c_double(0.5)
 >>> print(area)
